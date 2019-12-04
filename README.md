@@ -1,4 +1,4 @@
-#Tetris game made by c language.
+# Tetris game made by C language
 
 
 Reference site: [http://soen.kr/]
