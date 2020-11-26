@@ -17,6 +17,17 @@ const char *brick[7] = //char *brick[type];
 ```
 Each line corresponds to each block. Block has 4x4 space. 0 means blank space and 1 means block space. There are 7 blocks in total.
 
+For example, see the 3rd block. 
+`"0010111000000000010001000110000000001110100000001100010001000000",	//┘`
+
+If you spread the line to 4x4, Four 4x4 matrices come out. The reason why there are four matrices is because that each matrix represents rotated block. 
+```
+0010  0100  0000  1100
+1110  0100  1110  0100
+0000  0110  1000  0100
+0000  0000  0000  0000
+```
+Each 4x4 matrix represents the rotated ┘ block.
 ```c
 char board[BH + 2][BW + 2];
 /////
